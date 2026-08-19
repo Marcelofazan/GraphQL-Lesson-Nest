@@ -26,7 +26,7 @@ yarn run start:dev
 #### 🧪 Executar Endpoints 
 Certifique-se de copiar exatamente o ID retornado na mutation de criação e colá-lo na aba de variáveis dos testes seguintes.
 
-- 1. Criar um Novo Estudante (createStudent)
+- 1 - Criar um Novo Estudante (createStudent)
 - Esta mutation cria um estudante e devolve o id gerado pelo banco para ser usado nos próximos passos.GraphQL (Query)graphql
 
 ```bash
@@ -49,7 +49,7 @@ mutation CreateStudentWithVariables($input: CreateStudentInput!) {
 }
 ```
 
-- 2. Criar uma Nova Aula (createLesson)
+- 2 - Criar uma Nova Aula (createLesson)
 - Cria uma aula passando os dados e, opcionalmente, um array com IDs de estudantes que você copiou do passo anterior.
 
 ```bash
@@ -82,7 +82,7 @@ mutation CreateLessonWithVariables($input: CreateLessonInput!) {
 }
 ```
 
-- 3. Vincular Estudantes a uma Aula (assignStudentsToLesson)
+- 3 - Vincular Estudantes a uma Aula (assignStudentsToLesson)
 - Adiciona múltiplos estudantes de uma vez só a uma aula existente usando a nova lógica corrigida no backend.
 
 ```bash
@@ -112,7 +112,7 @@ mutation AssignStudentsWithVariables($input: AssignStudentsToLessonInput!) {
 }
 ```
 
-- 4. Querys Lessons
+- 4 - Querys Lessons
 ```bash
 query { lessons { id name } }
 
@@ -121,7 +121,7 @@ query GetAllLessonsList { lessons { id name startDate endDate students { id firs
 query GetLessonWithFixedId { lesson(id: \"ID_DA_LESSON_AQUI\") { id name startDate endDate students { id firstName lastName } } }
 ```
 
-- 5. Querys Students
+- 5 - Querys Students
 ```bash
 query { students { id firstName lastName } }
 
