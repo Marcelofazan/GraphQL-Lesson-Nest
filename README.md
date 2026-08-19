@@ -43,8 +43,8 @@ mutation CreateStudentWithVariables($input: CreateStudentInput!) {
 ```bash
 {
   "input": {
-    "firstName": "Mariana",
-    "lastName": "Souza"
+    "firstName": "Marcelo",
+    "lastName": "Gustavo"
   }
 }
 ```
