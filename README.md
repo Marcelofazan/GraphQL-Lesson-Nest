@@ -1,5 +1,5 @@
 ## GraphQL-Lesson-Nest
-Exemplo de Endpoint GraphQL em Nest com banco de dados MongoDB.
+Exemplo de Single Endpoint GraphQL em Nest com banco de dados MongoDB.
 
 #### 📋 O que voçê vai ver nesse Projeto
 | Tecnologia | Descrição |
