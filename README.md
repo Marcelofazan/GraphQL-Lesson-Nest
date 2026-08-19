@@ -27,7 +27,7 @@ yarn run start:dev
 Certifique-se de copiar exatamente o ID retornado na mutation de criação e colá-lo na aba de variáveis dos testes seguintes.
 
 - 1 - Criar um Novo Estudante (createStudent)
-- Esta mutation cria um estudante e devolve o id gerado pelo banco para ser usado nos próximos passos.GraphQL (Query)graphql
+- Esta mutation cria um estudante e devolve o id gerado pelo banco para ser usado nos próximos passos.
 
 ```bash
 mutation CreateStudentWithVariables($input: CreateStudentInput!) {
