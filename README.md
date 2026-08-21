@@ -27,8 +27,8 @@ yarn run start:dev
 Certifique-se de copiar exatamente o ID retornado na mutation de criação e colá-lo na aba de variáveis dos testes seguintes.
 
 - 1 - Criar um Novo Estudante (createStudent)
-- Esta mutation cria um estudante e devolve o id gerado pelo banco para ser usado nos próximos passos.
 
+Esta mutation cria um estudante e devolve o id gerado pelo banco para ser usado nos próximos passos.
 ```bash
 mutation CreateStudentWithVariables($input: CreateStudentInput!) {
   createStudent(createStudentInput: $input) {
@@ -50,8 +50,8 @@ mutation CreateStudentWithVariables($input: CreateStudentInput!) {
 ```
 
 - 2 - Criar uma Nova Aula (createLesson)
-- Cria uma aula passando os dados e, opcionalmente, um array com IDs de estudantes que você copiou do passo anterior.
 
+Cria uma aula passando os dados e, opcionalmente, um array com IDs de estudantes que você copiou do passo anterior.
 ```bash
 mutation CreateLessonWithVariables($input: CreateLessonInput!) {
   createLesson(createLessonInput: $input) {
@@ -83,8 +83,8 @@ mutation CreateLessonWithVariables($input: CreateLessonInput!) {
 ```
 
 - 3 - Vincular Estudantes a uma Aula (assignStudentsToLesson)
-- Adiciona múltiplos estudantes de uma vez só a uma aula existente usando a nova lógica corrigida no backend.
 
+Adiciona múltiplos estudantes de uma vez só a uma aula existente usando a nova lógica corrigida no backend.
 ```bash
 mutation AssignStudentsWithVariables($input: AssignStudentsToLessonInput!) {
   assignStudentsToLesson(assignStudentsToLessonInput: $input) {
