@@ -112,20 +112,30 @@ mutation AssignStudentsWithVariables($input: AssignStudentsToLessonInput!) {
 }
 ```
 
-- 4 - Querys Lessons
-```bash
-query { lessons { id name } }
-
-query GetAllLessonsList { lessons { id name startDate endDate students { id firstName lastName } } }
-
-query GetLessonWithFixedId { lesson(id: \"ID_DA_LESSON_AQUI\") { id name startDate endDate students { id firstName lastName } } }
-```
-
-- 5 - Querys Students
+- 4 - Querys Students
+- GETALL
 ```bash
 query { students { id firstName lastName } }
-
+```
+- GET ID
+```bash
 query { student(id: \"ID_DO_ALUNO\") { id firstName lastName } }
+```
+
+- 5 - Querys Lessons
+- GETALL
+```bash
+query { lessons { id name } }
+```
+
+- GETALL 
+```bash
+query GetAllLessonsList { lessons { id name startDate endDate students { id firstName lastName } } }
+```
+
+- GET ID
+```bash
+query GetLessonWithFixedId { lesson(id: \"ID_DA_LESSON_AQUI\") { id name startDate endDate students { id firstName lastName } } }
 ```
 
 #### 🔍 Executar Testes Unitários
