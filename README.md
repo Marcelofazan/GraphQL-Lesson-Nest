@@ -114,28 +114,28 @@ mutation AssignStudentsWithVariables($input: AssignStudentsToLessonInput!) {
 
 - 4 - Querys Students
 
-GETALL
+Get All
 ```bash
 query { students { id firstName lastName } }
 ```
-GET ID
+Get Id
 ```bash
 query { student(id: \"ID_DO_ALUNO\") { id firstName lastName } }
 ```
 
 - 5 - Querys Lessons
 
-GETALL
+Get All
 ```bash
 query { lessons { id name } }
 ```
 
-GETALL 
+Get All 
 ```bash
 query GetAllLessonsList { lessons { id name startDate endDate students { id firstName lastName } } }
 ```
 
-GET ID
+Get Id
 ```bash
 query GetLessonWithFixedId { lesson(id: \"ID_DA_LESSON_AQUI\") { id name startDate endDate students { id firstName lastName } } }
 ```
