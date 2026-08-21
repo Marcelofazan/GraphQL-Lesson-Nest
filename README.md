@@ -39,7 +39,8 @@ mutation CreateStudentWithVariables($input: CreateStudentInput!) {
 }
 ```
 
-- Em Query Variables (JSON): 
+Em Query Variables (JSON):
+
 ```bash
 {
   "input": {
@@ -68,7 +69,8 @@ mutation CreateLessonWithVariables($input: CreateLessonInput!) {
 }
 ```
 
-- Em Query Variables (JSON):
+Em Query Variables (JSON):
+
 ```bash 
 {
   "input": {
@@ -99,7 +101,8 @@ mutation AssignStudentsWithVariables($input: AssignStudentsToLessonInput!) {
 }
 ```
 
-- Em Query Variables (JSON):
+Em Query Variables (JSON):
+
 ```bash
 {
   "input": {
