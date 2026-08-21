@@ -130,7 +130,6 @@ Get All
 query { lessons { id name } }
 ```
 
-Get All 
 ```bash
 query GetAllLessonsList { lessons { id name startDate endDate students { id firstName lastName } } }
 ```
