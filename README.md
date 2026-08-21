@@ -112,7 +112,7 @@ mutation AssignStudentsWithVariables($input: AssignStudentsToLessonInput!) {
 }
 ```
 
-- 4 - Querys Students
+- 4 - Students Querys 
 
 Get All
 ```bash
@@ -123,7 +123,7 @@ Get Id
 query { student(id: \"ID_DO_ALUNO\") { id firstName lastName } }
 ```
 
-- 5 - Querys Lessons
+- 5 - Lessons Querys 
 
 Get All
 ```bash
